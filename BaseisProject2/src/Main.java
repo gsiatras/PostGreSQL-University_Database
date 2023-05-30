@@ -7,7 +7,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		dbconnect1();
+		dbconnect();
 		while(1!=0) {
 			printMenu();
 			int i = sc.nextInt();
@@ -31,7 +31,7 @@ public class Main {
 
 
 	static void dbconnect1() {
-		db.dbConnect("localhost", "Project2023", "postgres", "Panathas22!");
+		db.dbConnect("localhost", "Project2023", "postgres", "your_password");
 	}
 	
 	static void disconnect() {
